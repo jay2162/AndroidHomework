@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_180"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/custom_toolbar"
+                layout="@layout/custom_toolbar" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_70"
+            android:background="@drawable/theme_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfile"
+                    android:layout_width="@dimen/margin_80"
+                    android:layout_height="@dimen/margin_80"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_grey_user_placeholder"
+                    tools:text="Elizabeth Hogan" />
+
+                <TextView
+                    android:id="@+id/tvFullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_20"
+
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/elizabeth_hogan"
+                    android:textColor="@color/socialColor"
+                    android:textSize="@dimen/font_15" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_4"
+
+                    android:text="@string/elizabethhogan_gmail_com"
+                    android:textColor="@color/socialColor"
+                    android:textSize="@dimen/font_16" />
+
+                <TextView
+                    android:id="@+id/tvLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="@dimen/margin_20"
+                    android:layout_marginTop="@dimen/margin_40"
+                    android:layout_marginBottom="@dimen/margin_50"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/logout"
+                    android:textColor="@color/socialColor"
+                    android:textSize="@dimen/font_15"
+                    app:drawableLeftCompat="@drawable/ic_sign_out"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

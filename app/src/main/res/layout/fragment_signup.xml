@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/custom_toolbar"
+                layout="@layout/custom_toolbar" />
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_100"
+            android:background="@drawable/theme_bg"
+            android:overScrollMode="never"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_40">
+
+                <EditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapWords"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="40dp" />
+
+                <EditText
+                    android:id="@+id/edtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/email_placeholder"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintTop_toBottomOf="@+id/edtName"
+                    tools:layout_editor_absoluteX="40dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@+id/edtEmail"
+                    app:passwordToggleDrawable="@drawable/eyepassword"
+                    app:passwordToggleEnabled="true"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <EditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/password_placeholder"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etConPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintTop_toBottomOf="@+id/etPasswordLayout"
+                    app:passwordToggleDrawable="@drawable/eyepassword"
+                    tools:layout_editor_absoluteX="40dp">
+
+                    <EditText
+                        android:id="@+id/edtConPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/con_password_placeholder"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:text="@string/sign_up"
+                    app:layout_constraintTop_toBottomOf="@+id/etConPasswordLayout"
+                    tools:layout_editor_absoluteX="40dp" />
+
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/already_have_account"
+                    android:textColor="@color/alreadyLoginColor"
+                    android:textColorLink="@color/forgotColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/btnSignup"
+                    app:layout_constraintStart_toStartOf="@+id/btnSignup"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

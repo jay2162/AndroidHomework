@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">AndroidHomework</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_profile">Profile</string>
+    <string name="done">done</string>
+
+    <!--Common Strings-->
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+    <string name="no_internet">Internet connection is not available</string>
+    <string name="generic_server_error">Sorry, Something went wrong. Please try again later.</string>
+    <string name="no_records_available">No records available</string>
+    <string name="something_went_wrong">Error: Something went wrong</string>
+    <string name="permission_denied_message">If you reject permission, you can not use this service, Please turn on permissions at [Setting] > [Permission]</string>
+
+    <!--    Login-->
+    <string name="let_get_something">Let’s get something</string>
+    <string name="good_see_you_back">Good to see you back</string>
+    <string name="email">Email</string>
+    <string name="email_placeholder">Enter email</string>
+    <string name="password">Password</string>
+    <string name="password_placeholder">Enter password</string>
+    <string name="con_password_placeholder">Enter confirm password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Reset Password?</string>
+    <string name="social_media_login">Social media login</string>
+    <string name="dont_have_account">Don’t have an account? Sign Up</string>
+
+
+    <!--    Signup-->
+    <string name="getting_started">Getting Started</string>
+    <string name="create_account_continue">Create account to continue</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="fullname">Full Name</string>
+    <string name="name">Name</string>
+    <string name="individual">Individual</string>
+    <string name="business_artist_brand">Business/Artist/Brand</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enable_gps_location_services">Enable GPS location services</string>
+    <string name="enable_camera_access">Enable camera access</string>
+    <string name="google_maps_key">AIzaSyASLNy8aq4damMn6559u9Fr45BOeXwXAw0</string>
+    <string name="cancel">Cancel</string>
+    <string name="drip_of_the_month">Drip of the Month</string>
+    <string name="my_profile">Profile</string>
+
+
+    <!--    Forgot Password-->
+    <string name="enter_reset_email">Please enter your email below to receive your password reset instruction.</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="submit">Submit</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="logout">Logout</string>
+    <string name="elizabeth_hogan">Elizabeth Hogan</string>
+    <string name="elizabethhogan_gmail_com">elizabethhogan@gmail.com</string>
+
+</resources>

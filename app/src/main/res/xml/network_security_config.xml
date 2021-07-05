@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">blooming-stream-45371.herokuapp</domain>
+    </domain-config>
+</network-security-config>

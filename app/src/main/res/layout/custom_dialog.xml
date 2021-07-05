@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_rect_dialog_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_24">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_title"
+                    style="@style/titleTextViewStyle"
+                    android:textSize="@dimen/font_16"
+                    tools:text="Title" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_message"
+                    style="@style/medium_16_textStyle"
+                    android:layout_marginTop="@dimen/margin_11"
+                    android:textSize="@dimen/font_12"
+                    tools:text="Subtitle" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/grayColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_60"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_negative"
+                    style="@style/medium_16_textStyle"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/font_12"
+                    tools:text="Cancel" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayColor" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_positive"
+                    style="@style/medium_16_textStyle"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/places_autocomplete_prediction_primary_text"
+                    android:textSize="@dimen/font_12"
+                    tools:text="Yes" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
