@@ -1,9 +1,9 @@
 - Language: Kotlin
 - Touchpoints:
--- Networking
--- Maps
--- Design patterns
--- Dev Tool Utilization
+  Networking,
+  Maps,
+  Design patterns,
+  Dev Tool Utilization.
 ---------------------------------------
 API Spec
 Refer the API Spec below
