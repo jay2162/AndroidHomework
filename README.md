@@ -1,10 +1,9 @@
-Requirements
-Language: Kotlin
-Touchpoints:
-Networking
-Maps
-Design patterns
-Dev Tool Utilization
+- Language: Kotlin
+- Touchpoints:
+-- Networking
+-- Maps
+-- Design patterns
+-- Dev Tool Utilization
 ---------------------------------------
 API Spec
 Refer the API Spec below
@@ -17,7 +16,7 @@ required: Basic email validation
 Nice to have: Simple password strength support and indicators
 a working registration page
 required: Basic email validation
-Nice to have: Simple password strength support and indicators
+
 ----------------------------------
 ••••••
 Sign Up
